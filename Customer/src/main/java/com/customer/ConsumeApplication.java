@@ -1,6 +1,5 @@
 package com.customer;
 
-import java.util.ArrayList;
 import java.util.Arrays;
 
 import org.springframework.boot.SpringApplication;
@@ -27,15 +26,17 @@ public class ConsumeApplication {
 	public RestTemplate restTemplate() {
 		return new RestTemplate();
 	}
+
 	@Bean
-	public HystrixRequestContextServletFilter hystrixRequestContextServletFilter(){
+	public HystrixRequestContextServletFilter hystrixRequestContextServletFilter() {
 		return new HystrixRequestContextServletFilter();
 	}
+
 	@Bean
-	public FilterRegistrationBean filterRegistrationBean(){
-		FilterRegistrationBean filter=new FilterRegistrationBean();
+	public FilterRegistrationBean filterRegistrationBean() {
+		FilterRegistrationBean filter = new FilterRegistrationBean();
 		filter.setFilter(hystrixRequestContextServletFilter());
-		filter.setUrlPatterns(Arrays.asList(new String[]{"/*"}));
+		filter.setUrlPatterns(Arrays.asList(new String[] {"/*"}));
 		filter.setName("hystrixRequestContextServletFilter");
 		return filter;
 	}
