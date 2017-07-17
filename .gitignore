@@ -22,4 +22,13 @@ nbbuild/
 dist/
 nbdist/
 .nb-gradle/
-/*/out
+/feign-consumer/out
+/api-gateway/out
+/config-client/out
+/config-server/out
+/Customer/out
+/RegisterCenter/out
+/ServiceSupport/out
+/dashboard/out
+/turbine/out
+
