@@ -14,11 +14,14 @@ target/
 *.iws
 *.iml
 *.ipr
+*.jar
 
 ### NetBeans ###
 nbproject/private/
 build/
+*/out/
 nbbuild/
 dist/
 nbdist/
 .nb-gradle/
+out
