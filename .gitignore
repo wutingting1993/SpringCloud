@@ -14,14 +14,17 @@ target/
 *.iws
 *.iml
 *.ipr
+*.jar
 
 ### NetBeans ###
 nbproject/private/
 build/
+*/out/
 nbbuild/
 dist/
 nbdist/
 .nb-gradle/
+<<<<<<< HEAD
 /feign-consumer/out
 /api-gateway/out
 /config-client/out
@@ -32,3 +35,11 @@ nbdist/
 /dashboard/out
 /turbine/out
 
+=======
+out
+/feign-consumer/out
+/api-gateway/out
+/config-client/out
+/ServiceSupport/out
+/turbine/out
+>>>>>>> config-lable-test
